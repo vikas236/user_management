@@ -1,0 +1,73 @@
+.home {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 25px;
+}
+
+.home .chat_box {
+  width: 100%;
+  height: calc(100dvh - 50px);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.home .chat_box .msgs_list {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  padding: 50px 35px;
+  gap: 35px;
+  overflow: scroll;
+}
+
+.home .chat_box .msgs_list > div {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.home .chat_box .msgs_list p {
+  max-width: 100%;
+  background: #9c95dc;
+  padding: 7px 15px;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  margin: 0;
+}
+
+.home .chat_box .msg_input {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  gap: 11px;
+}
+
+.home .chat_box .msg_input input {
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  padding: 0 15px;
+  font-weight: 500;
+  color: #9c95dc;
+  outline: none;
+}
+
+.home .chat_box .msg_input button {
+  width: 50px;
+  cursor: pointer;
+  background: #9c95dc;
+  border: none;
+  border-radius: 50%;
+}
